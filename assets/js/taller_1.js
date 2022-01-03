@@ -1,7 +1,7 @@
 // CALCULOS Y FORMULAS
 // ===================
 
-// Codigo del cuadrado
+// FORMULAS CUADRADO
 
 function perimetroCuadrado(lado) {
     return lado * 4;
@@ -11,7 +11,7 @@ function areaCuadrado(lado) {
     return lado * lado;
 }
 
-// Codigo del rectangulo
+// FORMULAS RECTANGULO
 
 function perimetroRectangulo(lado1, lado2) { 
     return 2 * (lado1 + lado2);
@@ -21,7 +21,7 @@ function areaRectangulo (lado1, lado2) {
     return lado1 * lado2;
 }
 
-// Codigo del triangulo
+// FORMULAS TRIANGULO
 
 function perimetroTriangulo (lado1, lado2, base) {
     return lado1 + lado2 + base;
@@ -42,7 +42,7 @@ function esIsosceles(lado1, lado2, base) {
     }
 }
 
-// CIRCULO
+// FORMULAS CIRCULO
 
 const PI = Math.PI;
 
@@ -64,7 +64,7 @@ function areaCirculo(radio) {
 // LLAMADAS
 // ========
 
-// Cuadrado
+// CUADRADO
 
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("inputCuadrado");
@@ -84,7 +84,7 @@ function calcularAreaCuadrado() {
     result.innerHTML = 'RESULTADO: ' + area + ' cm';
 }
 
-// Rectangulo
+// RECTANGULO
 
 function calcularPerimetroRectangulo() {
     const lado1 = parseInt(document.getElementById('inputRectangulo1').value);
@@ -105,7 +105,7 @@ function calcularAreaRectangulo() {
     result.innerHTML = 'RESULTADO: ' + value + ' cm';
 }
 
-// Triangulo
+// TRIANGULO
 
 function calcularPerimetroTriangulo () {
     const lado1 = parseInt(document.getElementById('inputTriangulo1').value);
@@ -139,7 +139,7 @@ function calcularAreaTriangulo () {
     result.innerHTML = 'RESULTADO: ' + value + ' cm';
 }
 
-// Circulo
+// CIRCULO
 
 function calcularPerimetroCirculo () {
     const radio = parseInt(document.getElementById('inputCirculo').value);

@@ -1,4 +1,4 @@
-// Helpers
+// HELPERS
 
 const ms = document.getElementById('ms');
 const msdiez = document.getElementById('msdiez');
@@ -112,9 +112,6 @@ ms.addEventListener('click', (ev) => {
   selection = option
   active(ms)
 })
-
-
-// const medianaGeneralCol = medianaSalarios(salariosColSorted);
 
 // Mediana Top 10%
 function spliceList(list) {

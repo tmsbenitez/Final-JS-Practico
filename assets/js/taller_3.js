@@ -1,4 +1,4 @@
-// UTILIDADES
+// HELPERS
 
 const promedio = document.getElementById("promedio");
 const mediana = document.getElementById("mediana");
