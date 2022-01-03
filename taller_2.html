@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER #2 - Porcentajes y descuentos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300&family=Mukta&family=Roboto&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="./assets/img/logo-platzi-2.png" width="100%" alt="Platzi" class="platzi">
+            <a href="./index.html"><img src="./assets/img/a1755d74-68aa-4341-9efb-44902dda50f0.png" width="100%" alt="EscuelaJS"></a>
+            <ul class="menu">
+                <button class="home">
+                    <a href="./index.html"><i class="fas fa-home"></i><br><p class="menutxt">Inicio</p></a>
+                </button>
+
+                <button class="social">
+                    <a href="https://linktr.ee/tomasbenitez" id="sd_txt"><i class="fas fa-user-circle"></i><br><p class="menutxt">Redes</p></a>
+                </button>
+
+                <button class="taller1">
+                    <a href="./taller_1.html"><i class="fas fa-shapes"></i><br><p class="menutxt">Taller #1</p></a>
+                </button>
+
+                <button class="taller2">
+                    <a href="./taller_2.html"><i class="fas fa-dollar-sign"></i><br><p class="menutxt">Taller #2</p></a>
+                </button>
+
+                <button class="taller3">
+                    <a href="./taller_3.html"><i class="fas fa-percentage"></i><br><p class="menutxt">Taller #3</p></a>
+                </button>
+
+                <button class="taller4">
+                    <a href="./taller_4.html"><i class="fas fa-chart-line"></i><br><p class="menutxt">Taller #4</p></a>
+                </button>
+            </ul>
+        </aside>
+        
+        <main class="content">
+            <!-- Main Section -->
+            <div class="main-section">
+                <div class="heads">
+                    <h1 class="wtitle">Precios y descuentos</h1>
+                    <p class="wsubtitle">Taller #2</p>
+                </div>
+            </div>
+
+            <!-- Workshop -->
+            <div class="workshop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                    <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                </svg>
+                <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+                
+                <form class="calc">
+                    <label for="InputPrice">Escribe el <strong> Precio</strong> de tu producto</label><br>
+                    <input id= "InputPrice" type="text"> <br>
+                    
+                    <label for="InputDiscount">Escribe el <strong>Descuento</strong> de tu producto</label>
+                    <input id= "InputDiscount" type="text"><br>
+                    
+                    <p id="ResultP">MONTO:</p>
+                    
+                    <button type="button" onclick="onClickButtonPriceDiscount()">
+                        Calcular el precio
+                    </button>
+                </form>
+            </div>
+        </main>
+    </section>
+    <script src="./assets/js/taller_2.js">
+        
+    </script>
+</body>
+</html>

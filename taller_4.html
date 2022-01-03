@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER #4 - Análisis Salarial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300&family=Mukta&family=Roboto&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="./assets/img/logo-platzi-2.png" width="100%" alt="Platzi" class="platzi">
+            <a href="./index.html"><img src="./assets/img/a1755d74-68aa-4341-9efb-44902dda50f0.png" width="100%" alt="EscuelaJS"></a>
+            <ul class="menu">
+                <button class="home">
+                    <a href="./index.html"><i class="fas fa-home"></i><br><p class="menutxt">Inicio</p></a>
+                </button>
+
+                <button class="social">
+                    <a href="https://linktr.ee/tomasbenitez" id="sd_txt"><i class="fas fa-user-circle"></i><br><p class="menutxt">Redes</p></a>
+                </button>
+
+                <button class="taller1">
+                    <a href="./taller_1.html"><i class="fas fa-shapes"></i><br><p class="menutxt">Taller #1</p></a>
+                </button>
+
+                <button class="taller2">
+                    <a href="./taller_2.html"><i class="fas fa-dollar-sign"></i><br><p class="menutxt">Taller #2</p></a>
+                </button>
+
+                <button class="taller3">
+                    <a href="./taller_3.html"><i class="fas fa-percentage"></i><br><p class="menutxt">Taller #3</p></a>
+                </button>
+
+                <button class="taller4">
+                    <a href="./taller_4.html"><i class="fas fa-chart-line"></i><br><p class="menutxt">Taller #4</p></a>
+                </button>
+            </ul>
+        </aside>
+            
+        <main class="content">
+            <!-- Main Section -->
+            <div class="main-section">
+                <div class="heads">
+                    <h1 class="wtitle">Analisis Salarial</h1>
+                    <p class="wsubtitle">Taller #4</p>
+                </div>
+            </div>
+
+            <!-- Workshop -->
+            <div class="workshopD">
+                <form id="form">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                </svg>
+                <h2>Cálculos:</h2>
+                
+                    <div class="selectD">
+                        <div data-option="ms" id="ms" class="options">MEDIANA SALARIAL</div>
+                        <div data-option="msdiez" id="msdiez" class="options">TOP 10%</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPrice">Escribe un <strong>nuevo valor</strong> a la lista: </label>
+                        <input type="text" id="addValue">
+                        <p class="error" id="errorAddValue"></p>
+                        <button type="button" class="btn-form" onclick="addListNumber();" min="0">
+                            Agregar a la lista
+                        </button>
+
+                        <label for="inputDiscount">Escribe la <strong>posición</strong> del valor a eliminar de la lista:</label>
+                        <input type="text" id="removeValue">
+                        <p class="error" id="errorRemoveValue"></p>
+                        <button type="button" class="btn-form btn-form--alert" onclick="removeListNumber();">
+                            Quitar de la lista
+                        </button>
+                        <p class="result" id="resultado">RESULTADO: </p>
+                        <button type="button" id="calcular">
+                            Calcular
+                        </button>
+                    </div>
+                </form>
+                <div class="f2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ol" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M1.713 11.865v-.474H2c.217 0 .363-.137.363-.317 0-.185-.158-.31-.361-.31-.223 0-.367.152-.373.31h-.59c.016-.467.373-.787.986-.787.588-.002.954.291.957.703a.595.595 0 0 1-.492.594v.033a.615.615 0 0 1 .569.631c.003.533-.502.8-1.051.8-.656 0-1-.37-1.008-.794h.582c.008.178.186.306.422.309.254 0 .424-.145.422-.35-.002-.195-.155-.348-.414-.348h-.3zm-.004-4.699h-.604v-.035c0-.408.295-.844.958-.844.583 0 .96.326.96.756 0 .389-.257.617-.476.848l-.537.572v.03h1.054V9H1.143v-.395l.957-.99c.138-.142.293-.304.293-.508 0-.18-.147-.32-.342-.32a.33.33 0 0 0-.342.338v.041zM2.564 5h-.635V2.924h-.031l-.598.42v-.567l.629-.443h.635V5z"/>
+                    </svg>
+                    
+                    <h2>Lista de valores agregados:</h2>
+                    <ul id="list-values"></ul>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="./assets/js/taller_4.js"></script>
+</body>
+</html>

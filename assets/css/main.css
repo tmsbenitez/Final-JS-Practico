@@ -1,0 +1,464 @@
+/*** GLOBALS ***/
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    background-color:rgb(39, 40, 49);
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 15rem repeat(1, 1fr);
+    grid-template-areas: "sidebar content";
+}
+
+/* PARAGRAPH */
+
+p {
+    overflow: hidden;
+    font-size: 2.5rem;
+    font-family: 'Karla';
+    text-transform: uppercase;
+    line-height: 5rem;
+    word-wrap: break-word;
+}
+
+/* FORM */
+
+form {
+    line-height: 5rem;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}
+
+/* HEAD */
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+
+.subtitle {
+    font-family: 'Karla';
+    font-size: 2.5rem;
+    color: rgba(151,201,62,255);
+    opacity: .9;
+    text-align: center;
+}
+
+/* INPUT */
+
+input {
+    color: white;
+    font-size: 1.5rem;
+    font-family: inherit;
+    background: rgb(62, 63, 78);
+    border: none;
+    height: 3rem;
+    width: 100%;
+    text-align: 1rem;
+}
+
+input:focus {
+    border-width: .2rem;
+    background:rgb(87, 88, 97);
+    outline: none;
+}
+
+/* BUTTON */
+
+button {
+    font-family: 'Montserrat';
+    background: none;
+    color: white;
+    border: .1rem solid;
+    height: 4rem;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border-color: rgba(246,223,28,255);
+    color: rgba(246,223,28,255);
+    transition: .3s ease-in-out;
+}
+
+/* SVG */
+
+svg{
+    position: flex;
+    color:white;
+    width: 5rem;
+    height: 5rem;
+}
+
+/*** SIDEBAR ***/
+
+aside {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    background:rgb(62, 63, 78);
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-area: sidebar;
+}
+
+.sidebar img {
+    width: 13rem;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.sidebar ul li {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    color: rgba(246,223,28,255);
+    transition: .3s ease-in-out;
+}
+
+.sidebar i {
+    font-size: 2.5rem;
+}
+
+.sidebar button{
+	align-items: center;
+	justify-content: center;
+	height: 9.5rem;
+	background:rgb(62, 63, 78);
+	color: #fff;
+	border: none;
+	transition: .3s ease all;
+	overflow: hidden;
+}
+
+.menutxt {
+    font-family: 'Karla';
+	font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/*** HOME ***/
+
+/* MAIN SECTION */
+
+.title {
+    font-size: 6rem;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+}
+
+/* WORKSHOP BUTTONS */
+
+.works button {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: none;
+    font-family: 'Karla';
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align:center;
+    height: 15rem;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+    transition: .3 ease-in;
+    border: 1px solid white;
+    line-height: 5rem;
+}
+
+.works button:hover {
+    color: rgba(246,223,28,255);
+    border-color: rgba(246,223,28,255);
+    transition: .3s ease-in-out;
+}
+
+.works {
+    width: 100%;
+    margin: auto;
+	padding: 10% 5%;
+    align-items: center;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10rem;
+    row-gap: 10rem;
+}
+
+
+
+/*** WORKSHOPS ***/
+
+.wtitle {
+    line-height: 5rem;
+    font-size: 4rem;
+    font-family: 'Karla';
+}
+
+.wsubtitle {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    color: rgba(151,201,62,255);
+}
+
+.workshop {
+    width: 50%;
+    margin-top: 5%;
+}
+
+/** TALLER #1 **/
+
+.shapes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2%;
+    width: 97%;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+#labels {
+    line-height: 5rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+.workshopA {
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* CUADRADO */
+
+.content #resultSquare {
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+/* RECTANGULO */
+
+.content #resultRectangle {
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+/* TRIANGULO */
+
+.content #resultTriangle {
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+/* CIRCULO */
+
+.content #resultCircle {
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+/** TALLER #2 **/
+
+#ResultP {
+    font-family: 'Karla';
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+/** TALLER #3 **/
+
+.result {
+    margin-top: 2rem;
+    font-family: 'Karla';
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+.select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.options {
+    border: .1rem solid;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    margin-top: 2rem;
+}
+
+.options.active, .options:hover {
+    color: rgba(246,223,28,255);
+    transition: .3s ease-in-out;
+}
+
+/** TALLER #4 **/
+
+.result {
+    margin-top: 2rem;
+    font-family: 'Karla';
+    text-transform: none;
+    font-size: 2rem;
+    color: rgba(151,201,62,255);
+}
+
+.selectD {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.optionsD {
+    border: .1rem solid;
+    width: 100;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    color: white;
+}
+
+.optionsD.active, .optionsD:hover {
+    color: rgba(246,223,28,255);
+    transition: .3s ease-in-out;
+}
+
+.workshopD {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.f2 ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-left: 1.5%;
+}
+
+.error {
+    font-size: 2rem;
+    color:rgb(255, 94, 94);
+}
+
+
+/*************************/
+/*** MEDIA RESPONSIVE ***/
+
+@media screen and (max-width: 1024px) {
+
+    .content {
+        grid-column: 1 / -1;
+    }
+
+    .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .works {
+        row-gap: 3rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .sidebar .platzi {
+        display: none;
+    }
+
+    .heads {
+        text-align: center;
+    }
+
+    .shapes {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .square, .rectangle, .triangle, .circle, .f2, .taller_1, .taller_2, .taller_3, .taller_4  {
+        grid-column: 1 / -1;
+    }
+
+    .square, .rectangle, .circle {
+        margin-top: 5rem;
+    }
+
+    form {
+        margin: 2rem;
+    }
+
+    .workshop, .workshopA{
+        width: 100%;
+        padding-bottom: 15%;
+        text-align: center
+    }
+
+    .workshopD {
+        width: 100%;
+        padding-bottom: 15%;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .form-group, .f2 {
+        margin-top: 3rem;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .menutxt {
+        display: none;
+    }
+}

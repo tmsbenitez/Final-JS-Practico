@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300&family=Mukta&family=Roboto&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>TALLER #1 - Figuras Geométricas</title>
+</head>
+<body>
+    <section class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="./assets/img/logo-platzi-2.png" width="100%" alt="Platzi" class="platzi">
+            <a href="./index.html"><img src="./assets/img/a1755d74-68aa-4341-9efb-44902dda50f0.png" width="100%" alt="EscuelaJS"></a>
+            <ul class="menu">
+                <button class="home">
+                    <a href="./index.html"><i class="fas fa-home"></i><br><p class="menutxt">Inicio</p></a>
+                </button>
+
+                <button class="social">
+                    <a href="https://linktr.ee/tomasbenitez" id="sd_txt"><i class="fas fa-user-circle"></i><br><p class="menutxt">Redes</p></a>
+                </button>
+
+                <button class="taller1">
+                    <a href="./taller_1.html"><i class="fas fa-shapes"></i><br><p class="menutxt">Taller #1</p></a>
+                </button>
+
+                <button class="taller2">
+                    <a href="./taller_2.html"><i class="fas fa-dollar-sign"></i><br><p class="menutxt">Taller #2</p></a>
+                </button>
+
+                <button class="taller3">
+                    <a href="./taller_3.html"><i class="fas fa-percentage"></i><br><p class="menutxt">Taller #3</p></a>
+                </button>
+
+                <button class="taller4">
+                    <a href="./taller_4.html"><i class="fas fa-chart-line"></i><br><p class="menutxt">Taller #4</p></a>
+                </button>
+            </ul>
+        </aside>
+        
+        <main class="content">
+        <!-- Main Section -->
+        <div class="main-section">
+            <div class="heads">
+                <h1 class="wtitle">Figuras Geométricas</h1>
+                <p class="wsubtitle">Taller #1</p>
+            </div>
+        </div>
+
+
+        <!-- Workshop -->
+        <div class="workshopA">
+        <div class="shapes">
+            <!-- TRIANGULO -->
+            <div id="labels" class="triangle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-triangle" viewBox="0 0 16 16">
+                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                </svg>
+                <p>Triángulo</p>
+                <label for="inputTriangulo1">
+                    Ingrese el <strong>Lado A</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputTriangulo1" min="1"> <br>
+                
+                <label for="inputTriangulo2">
+                    Ingrese el <strong>Lado B</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputTriangulo2" min="1"> <br>
+                
+                <label for="inputTriangulo3">
+                    Ingrese la <strong>Base</strong> en cm
+                </label> <br>
+                <input type="text" name="base" id="inputTriangulo3" min="1"> <br>
+                
+                <label for="inputTriangulo4">
+                    Ingrese la <strong>Altura</strong> en cm
+                </label> <br>
+                <input type="text" name="altura" id="inputTriangulo4" min="1"> <br>
+                
+                <p id="resultTriangle">RESULTADO:</p>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button> <br>
+                <button type="button" onclick="calcularAlturaIsosceles()">Calcular la altura isósceles</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+            </div>
+
+            <!-- RECTANGULO -->
+            <div id="labels" class="rectangle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file" viewBox="0 0 16 16">
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                </svg>
+                <p>Rectángulo</p>
+                <label for="inputRectangulo1">
+                    Ingrese el <strong>Lado A</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputRectangulo1" min="1"> <br>
+                        
+                <label for="inputRectangulo2">
+                    Ingrese el <strong>Lado B</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputRectangulo2" min="1"> <br>
+                
+                    <p id="resultRectangle">RESULTADO:</p>
+                    <button type="button" onclick="calcularPerimetroRectangulo()">Calcular el perímetro</button> <br>
+                    <button type="button" onclick="calcularAreaRectangulo()">Calcular el área</button>
+            </div>
+
+            <!-- CIRCULO -->
+            <div id="labels" class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                </svg>
+                <p>Círculo</p>
+                <label for="inputCirculo">
+                    Ingrese el <strong>Radio</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputCirculo" min="1"> <br>
+                    <p id="resultCircle">RESULTADO:</p>
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button> <br>
+                    <button type="button" onclick="calcularDiametroCirculo()">Calcular el diámetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+            </div>
+
+            <!-- CUADRADO --> 
+            <div id="labels" class="square">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                </svg>
+                <p>Cuadrado</p>
+                <label for="inputCuadrado">
+                    Ingrese el <strong>Lado</strong> en cm
+                </label> <br>
+                <input type="text" name="lado" id="inputCuadrado" min="1"> <br>
+                
+                    <p id="resultSquare">RESULTADO:</p>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button> <br>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+            </div>  
+        </div>
+        </div>
+        </main>
+    </section>
+
+    <script src="./assets/js/taller_1.js"></script>
+    </body>
+    </html>

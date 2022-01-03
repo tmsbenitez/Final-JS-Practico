@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER #3 - Promedio, Moda y Mediana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300&family=Mukta&family=Roboto&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="./assets/img/logo-platzi-2.png" width="100%" alt="Platzi" class="platzi">
+            <a href="./index.html"><img src="./assets/img/a1755d74-68aa-4341-9efb-44902dda50f0.png" width="100%" alt="EscuelaJS"></a>
+            <ul class="menu">
+                <button class="home">
+                    <a href="./index.html"><i class="fas fa-home"></i><br><p class="menutxt">Inicio</p></a>
+                </button>
+
+                <button class="social">
+                    <a href="https://linktr.ee/tomasbenitez" id="sd_txt"><i class="fas fa-user-circle"></i><br><p class="menutxt">Redes</p></a>
+                </button>
+
+                <button class="taller1">
+                    <a href="./taller_1.html"><i class="fas fa-shapes"></i><br><p class="menutxt">Taller #1</p></a>
+                </button>
+
+                <button class="taller2">
+                    <a href="./taller_2.html"><i class="fas fa-dollar-sign"></i><br><p class="menutxt">Taller #2</p></a>
+                </button>
+
+                <button class="taller3">
+                    <a href="./taller_3.html"><i class="fas fa-percentage"></i><br><p class="menutxt">Taller #3</p></a>
+                </button>
+
+                <button class="taller4">
+                    <a href="./taller_4.html"><i class="fas fa-chart-line"></i><br><p class="menutxt">Taller #4</p></a>
+                </button>
+            </ul>
+        </aside>
+
+        
+        <main class="content">
+            <!-- Main Section -->
+            <div class="main-section">
+                <div class="heads">
+                    <h1 class="wtitle">Promedio, Moda y Mediana</h1>
+                    <p class="wsubtitle">Taller #3</p>
+                </div>
+            </div>
+            <!-- Workshop -->
+            <div class="workshop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
+                    <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+                <h2>Cálculos:</h2>
+
+                <form class="formularios">
+                    <label id="nuevoValor" >Escribe los <strong>valores</strong></label>
+                    <input type="text" placeholder="Ejemplo: 20,30,99,2,4" id="inputValues"> <br>
+                    <div class="select">
+                        <div data-option="promedio" id="promedio" class="options">PROMEDIO</div>
+                        <div data-option="moda" id="moda" class="options">MODA</div>
+                        <div data-option="mediana" id="mediana" class="options">MEDIANA</div>
+                    </div>
+                    <p class="result" id="resultado">RESULTADO: </p>
+                    <button type="button" id="calcular">Calcular</button>
+                </form>
+            </div>
+        </main>
+    </section>
+    <script src="./assets/js/taller_3.js"></script>
+</body>
+</html>
